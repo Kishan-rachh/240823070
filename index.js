@@ -224,7 +224,50 @@ if (number7 > 0) {
 }
 
 // 20
-let x = 2;
-let y = 3;
-let result2 = x ** y;
-console.log(result2);
+// let x = 2;
+// let y = 3;
+// let result2 = x ** y;
+// console.log(result2);
+
+
+const express = require("express");
+
+const app = express();
+
+const FORT =80;
+
+app.use(express.json());
+
+q, res)
+
+res.send("Hello, BCA Students");
+
+app.get("/show/id", (req, res)(
+
+res.send(Wello, Student! ID: S(reg.params.id)");
+
+// store to insert Record in database
+
+app.post("/sture", (req, res) >
+
+// Lugic to Insert record in database would go here
+
+res.send("Successfully stored record $(reg.body.name), (req.body.city)");
+
+app.put("/update/tid", (req, res) (
+
+Logis to spdate record in database would go here
+
+res.send(
+
+Successfully updated record! ID: req.params.id), Rame: 5(req.body.name), (req.body.city)
+
+);
+
+app.delete("/delete/tid", (req, res)(
+
+res.send('Successfully deleted record with ID: S(req.params.id));
+
+app.listen(PORT, ()
+
+console.log('Server is running at http://localhost:3(PORT))
