@@ -1,0 +1,15 @@
+exports.index1 = (req, res) => {
+    res.send(`Welcome to the MCA Student Management System`);
+};
+exports.show = (req, res) => {
+    res.send(`Showing student with ID: ${req.params.id}\n`);   
+};
+exports.store = (req, res) => {
+    res.send(`Data recevied:${req.body.name}, ${req.body.city}\n`);
+};
+exports.update = (req, res) => {
+    res.send(`Data updated for ID:${req.params.id}, Name: ${req.body.name}, City: ${req.body.city}\n`);
+};
+exports.delete = (req, res) => {
+    res.send(`Data deleted for ID: ${req.params.id}\n`);
+};
