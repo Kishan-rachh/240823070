@@ -1,0 +1,19 @@
+exports.index1 = (req, res) => {
+    res.send("Welcome to the Products API!\n");
+};
+
+exports.show = (req, res) => {
+    res.send(`Showing data for ID: ${req.params.id}\n`);
+};
+
+exports.store = (req, res) => {
+    res.send(`Data received: Name - ${req.body.name}, Price - ${req.body.price}\n`);
+};
+
+exports.update = (req, res) => {
+    res.send(`Data updated for ID: ${req.params.id}, Name - ${req.body.name}, Price - ${req.body.price}\n`);
+};
+
+exports.delete = (req, res) => {
+    res.send(`Data deleted for ID: ${req.params.id}\n`);
+};

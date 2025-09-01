@@ -2,10 +2,10 @@
   "name": "240823070",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Productsapi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index1.js"
+    "start": "nodemon Productsapi.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Kishan-rachh/240823070#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   }
 }
