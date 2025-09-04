@@ -15,17 +15,42 @@ const studentSchema = new mongooose.Schema({
 });
 
 const Student = mongooose.model("Student",studentSchema);
-
 console.log("Mongodb connected successfully");
 
-const student = new Student({
-    name: "Kishan Rachh",
-    department: "Computer Science",
-    startyear: 2020,
-    endyear: 2024,
-    enrollment: 123456,
-    address: "Rajkot"
-});
+    Student.find()
+        .then((students) => {
+            console.log("Students found successfully   :", students);
+        })
+        .catch((error) => {
+            console.error("Error finding students:", error);
+        });
+
+    Student.find({ department: "Computer Science" })
+        .then((students) => {
+            console.log("Students found successfully   :", students);
+        })
+        .catch((error) => {
+            console.error("Error finding students:", error);
+        });
+
+        const student = new Student({
+            name: "ravi patel",
+            department: "Master of Computer Application",
+            startyear: 2024,
+            endyear: 2026,
+            enrollment: 240823068,
+            address: "Rajkot",
+        });
+       
+
+// const student = new Student({
+//     name: "Kishan Rachh",
+//     department: "Computer Science",
+//     startyear: 2020,
+//     endyear: 2024,
+//     enrollment: 123456,
+//     address: "Rajkot"
+// });
 
 student.save()
     .then(() => {
