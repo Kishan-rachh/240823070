@@ -8,10 +8,10 @@ app.use(express.json());
 
 mongoose.connect(
   "mongodb+srv:/",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
+  // {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  // }
 );
 
 app.use("/song", studentRoute);
