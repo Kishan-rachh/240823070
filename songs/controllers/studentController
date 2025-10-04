@@ -11,7 +11,7 @@ exports.index = (req, res) => {
     });
 };
 exports.show = (req, res) => {
-  Song.findById(req.params.id)
+  Song.findById(req.params.id)  
     .then((song) => {
       console.log("All songs retrieved successfully:", song);
       res.send({ message: "Songs retrieved successfully", data: song });
